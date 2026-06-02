@@ -1,0 +1,22 @@
+# Core CV & ML
+numpy>=1.24
+opencv-python>=4.8
+ultralytics>=8.0          # YOLOv8
+Pillow>=9.0
+
+# Video I/O
+imageio-ffmpeg>=0.4
+
+# Live display (optional — install only for headed mode)
+pygame>=2.5
+
+# Visualisation
+matplotlib>=3.7
+
+# CARLA Python API
+# ─────────────────────────────────────────────────────────────────────
+# NOT on PyPI. Install from your CARLA installation:
+#   pip install <CARLA_ROOT>/PythonAPI/carla/dist/carla-*.whl
+# or add the egg to PYTHONPATH:
+#   export PYTHONPATH=$PYTHONPATH:<CARLA_ROOT>/PythonAPI/carla
+# ─────────────────────────────────────────────────────────────────────

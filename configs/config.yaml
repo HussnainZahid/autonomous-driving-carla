@@ -1,0 +1,48 @@
+# configs/config.yaml
+# ─────────────────────────────────────────────────────────────────────
+# Default configuration for the vision-only CARLA driving system.
+# Override any value with CLI flags (see python main.py --help).
+# ─────────────────────────────────────────────────────────────────────
+
+carla:
+  host:    "localhost"
+  port:    2000
+  timeout: 15.0          # seconds
+
+simulation:
+  fps:     20            # fixed_delta_seconds = 1/fps
+  frames:  1200          # total frames to record (60 s at 20 fps)
+
+vehicle:
+  blueprint_priority:
+    - "vehicle.tesla.model3"
+    - "vehicle.audi.a2"
+    - "vehicle.*"        # fallback: any vehicle
+
+camera:
+  width:   960
+  height:  540
+  fov:     100
+  mount:
+    x:     1.8           # metres forward of vehicle origin
+    z:     1.4           # metres above ground
+    pitch: -5            # degrees (slight downward tilt)
+
+traffic:
+  enabled:    true
+  n_vehicles: 12
+  n_walkers:  6
+  min_dist:   25         # spawn NPC vehicles at least this far from ego (m)
+
+cv:
+  yolo_model:  "yolov8n.pt"   # yolov8n / yolov8s / yolov8m etc.
+  lane_history: 8              # temporal smoothing window (frames)
+
+driver:
+  target_speed: 35.0           # km/h cruise speed
+  steer_kp:     1.2            # waypoint steering proportional gain
+  steer_smooth: 0.7            # 1=no smoothing, 0=ignore new value
+
+output:
+  video:        "outputs/autonomous_driving_carla.mp4"
+  pipeline_png: "outputs/pipeline.png"

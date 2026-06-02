@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Output videos and images
+outputs/*.mp4
+outputs/*.png
+outputs/*.avi
+
+# YOLO model weights (large files)
+*.pt
+*.pth
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
