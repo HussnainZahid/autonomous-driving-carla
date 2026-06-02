@@ -19,19 +19,11 @@ no ground-truth position data. Just pixels → decisions.
 
 <br/>
 
-[🎬 Watch Demo](#-demo) • [⚙️ Installation](#️-installation) • [▶️ Run](#️-run-commands) • [🧠 How It Works](#-how-it-works) • [📊 Results](#-results)
+ • [⚙️ Installation](#️-installation) • [▶️ Run](#️-run-commands) • [🧠 How It Works](#-how-it-works) • [📊 Results](#-results)
 
 </div>
 
----
 
-## 📽️ Demo
-
-> 🎬 Click below to watch the full autonomous driving demo
-
-[![Demo Video](https://github.com/HussnainZahid/autonomous-driving-carla/blob/main/assets/screenshot1.png)](https://github.com/HussnainZahid/autonomous-driving-carla/blob/main/outputs/autonomous_driving_carla.mp4)
-
----
 
 ## 🖼️ Screenshots
 
